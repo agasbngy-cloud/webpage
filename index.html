@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal portfolio of Agatha A. Sabungey, a 3rd-year BS Computer Science student at the University of Northern Philippines.">
+  <meta name="theme-color" content="#1c1f10">
+  <title>Agatha A. Sabungey | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__brand" aria-label="Agatha Sabungey, home">aga<span>.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#resume" class="nav__link">Resume</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- A. HERO -->
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero__text reveal">
+        <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Exploring, Learning, and Growing.</p>
+        <h1 id="hero-title">Hi, I'm <em>Agatha</em></h1>
+        <p class="hero__lead">I'm a 3rd-year college student at the University of Northern Philippines, passionate about learning, technology, and personal growth.</p>
+        <div class="hero__actions">
+          <a href="#about" class="btn btn--primary">About me <span aria-hidden="true">↓</span></a>
+          <a href="#resume" class="btn btn--ghost">View resume</a>
+        </div>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__ring" aria-hidden="true"></div>
+        <figure class="hero__photo">
+          <img src="assets/profile.jpg" alt="Portrait of Agatha A. Sabungey standing on a grass field at night" width="900" height="1200">
+        </figure>
+        <span class="chip chip--a" aria-hidden="true">&lt;/&gt; code</span>
+        <span class="chip chip--b" aria-hidden="true">learn · build</span>
+      </div>
+    </section>
+
+    <!-- B. ABOUT -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <p class="section__num">01</p>
+      <h2 id="about-title" class="section__title">About Me</h2>
+      <div class="about reveal">
+        <p>Hi! I'm Agatha, a 3rd-year college student at the University of Northern Philippines. I enjoy learning new things, exploring technology, and improving my skills.</p>
+        <p>My goal is to improve my knowledge, gain more experience, and become successful in my chosen career.</p>
+      </div>
+    </section>
+
+    <!-- C. RESUME -->
+    <section class="section container" id="resume" aria-labelledby="resume-title">
+      <p class="section__num">02</p>
+      <h2 id="resume-title" class="section__title">Resume</h2>
+
+      <h3 class="subhead">Education</h3>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <span class="timeline__date">Current</span>
+          <h4>University of Northern Philippines</h4>
+          <p>BS Computer Science · 3rd year</p>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__date">Senior High School</span>
+          <h4>Candon National High School</h4>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__date">Junior High School</span>
+          <h4>Candon National High School</h4>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__date">Elementary</span>
+          <h4>Galimuyod Integrated School</h4>
+        </li>
+      </ol>
+
+      <h3 class="subhead">Skills</h3>
+      <div class="cards">
+        <article class="card reveal">
+          <h4>Programming Languages</h4>
+          <ul class="tags"><li>C</li><li>Python</li><li>JavaScript</li></ul>
+        </article>
+        <article class="card reveal">
+          <h4>Web Development</h4>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>Basic JavaScript</li></ul>
+        </article>
+        <article class="card reveal">
+          <h4>Software and Tools</h4>
+          <ul class="tags"><li>Visual Studio Code</li><li>Git and GitHub</li></ul>
+        </article>
+        <article class="card reveal">
+          <h4>Technical and Soft Skills</h4>
+          <ul class="tags"><li>Problem-solving</li><li>Critical thinking</li><li>Teamwork</li><li>Time management</li><li>Communication</li><li>Willingness to learn</li></ul>
+        </article>
+      </div>
+
+      <h3 class="subhead">Experience</h3>
+      <article class="card card--wide reveal">
+        <h4>Coursework</h4>
+        <ul class="tags">
+          <li>Object-Oriented Programming</li>
+          <li>Web System and Development</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Fundamentals of Programming</li>
+          <li>Intermediate Programming</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- D. PROJECTS -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <p class="section__num">03</p>
+      <h2 id="projects-title" class="section__title">Projects</h2>
+      <div class="projects">
+        <article class="project reveal">
+          <p class="project__idx">01</p>
+          <h3>Computer Vision-Based Attendance System</h3>
+          <p>This project develops a facial recognition-based attendance system for Software Engineering 1 at the University of Northern Philippines. It aims to reduce manual attendance work, prevent proxy attendance, and improve record management. The system also includes answer sheet scanning, attendance reports, and SMS or email notifications to parents or guardians.</p>
+          <ul class="tags"><li>UI/UX</li><li>Camera</li><li>Web</li></ul>
+          <div class="project__links">
+            <a class="btn btn--primary" href="https://github.com/agasbngy-cloud" target="_blank" rel="noopener">View project <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://github.com/agasbngy-cloud" target="_blank" rel="noopener">GitHub repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <p class="project__idx">02</p>
+          <h3>IDntPrint</h3>
+          <p>IDntPrint is a campus-based printing request system for students of the University of Northern Philippines. It aims to reduce long queues and waiting times by allowing students to upload documents, monitor real-time printing queues, and track their request status. It provides a faster and more organized printing experience.</p>
+          <ul class="tags"><li>Web dev</li><li>Database</li><li>Real-time queue management</li></ul>
+          <div class="project__links">
+            <a class="btn btn--primary" href="https://github.com/agasbngy-cloud" target="_blank" rel="noopener">View project <span aria-hidden="true">↗</span></a>
+            <a class="btn btn--ghost" href="https://github.com/agasbngy-cloud" target="_blank" rel="noopener">GitHub repository <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- F. CONTACT -->
+    <section class="section container" id="contact" aria-labelledby="contact-title">
+      <p class="section__num">04</p>
+      <h2 id="contact-title" class="section__title">Contact Me</h2>
+      <div class="contact">
+        <div class="contact__info reveal">
+          <p>Want to say hello? Send a message or find me on these platforms.</p>
+          <ul class="contact__list">
+            <li><span>Email</span><a href="mailto:aa.sabungey@unp.edu.ph">aa.sabungey@unp.edu.ph</a></li>
+            <li><span>GitHub</span><a href="https://github.com/agasbngy-cloud" target="_blank" rel="noopener">agasbngy-cloud</a></li>
+            <li><span>TikTok</span><a href="https://www.tiktok.com/@sisiganggg6?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener">@sisiganggg6</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/agaaeiou?stkn=aG85MmdveDlqeWx3" target="_blank" rel="noopener">@agaaeiou</a></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <p class="field__error" id="name-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="field__error" id="email-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+            <p class="field__error" id="subject-error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <p class="field__error" id="message-error" role="alert"></p>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="form__status" id="formStatus" role="status"></p>
+          <p class="form__note">Demo form: it validates your input but does not send messages to a server yet. See the README to connect it to a form service.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- G. FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Agatha A. Sabungey. All rights reserved.</p>
+      <ul class="footer__links" aria-label="Social links">
+        <li><a href="https://github.com/agasbngy-cloud" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.tiktok.com/@sisiganggg6?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener">TikTok</a></li>
+        <li><a href="https://www.instagram.com/agaaeiou?stkn=aG85MmdveDlqeWx3" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+      <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
